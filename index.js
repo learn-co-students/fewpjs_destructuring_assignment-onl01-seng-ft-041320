@@ -1,6 +1,60 @@
 const farmAnimals = 'cow horse sheep pig chicken'
+const [moo, neigh, baa, oink, cluck] = farmAnimals.split(' ')
+
+// expect(Bessie).to.exist
+//     expect(Bessie).to.equal("cow")
+//     expect(Dolly).to.exist
+//     expect(Dolly).to.equal("sheep")
+//     expect(Babe).to.exist
+//     expect(Babe).to.equal("pig")
+//     expect(Little).to.exist
+//     expect(Little).to.equal("chicken")
+
+
+const [Bessie, ,Dolly, Babe, Little] = farmAnimals.split(' ')
+
+// expect(black_and_white).to.exist
+//     expect(black_and_white).to.equal("cow")
+//     expect(black).to.exist
+//     expect(black).to.equal("sheep")
+//     expect(pink).to.exist
+//     expect(pink).to.equal("pig")
+
+const [black_and_white, , black, pink, ] = farmAnimals.split(' ')
+
+// expect(red).to.exist
+//     expect(red).to.equal("red")
+//     expect(orange).to.exist
+//     expect(orange).to.equal("orange")
+//     expect(yellow).to.exist
+//     expect(yellow).to.equal("yellow")
+//     expect(green).to.exist
+//     expect(green).to.equal("green")
+//     expect(blue).to.exist
+//     expect(blue).to.equal("blue")
+//     expect(indigo).to.exist
+//     expect(indigo).to.equal("indigo")
+//     expect(violet).to.exist
+//     expect(violet).to.equal("violet")
 
 const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
+const [red, orange, yellow, green, blue, indigo, violet] = colors
+
+// expect(r).to.exist
+//     expect(r).to.equal("red")
+//     expect(o).to.exist
+//     expect(o).to.equal("orange")
+//     expect(y).to.exist
+//     expect(y).to.equal("yellow")
+//     expect(g).to.exist
+//     expect(g).to.equal("green")
+//     expect(b).to.exist
+//     expect(b).to.equal("blue")
+//     expect(v).to.exist
+//     expect(v).to.equal("violet")
+const [ r, o, y, g, b, , v] = colors
+const [ , , , , , indg, ] = colors
+
 
 const muppet = {
   name: 'Kermit',
@@ -9,6 +63,8 @@ const muppet = {
   job: 'Host of The Muppet Show',
   partner: 'Miss Piggy'
 };
+
+const {name, color, song, job, partner} = muppet
 
 const k_muppet = {
   k_name: 'Kermit',
@@ -24,6 +80,9 @@ const k_muppet = {
   k_job: 'Host of The Muppet Show',
   k_partner: 'Miss Piggy'
 };
+
+const {song_2, song_4} = k_muppet.k_album.the_muppet_movie
+const {k_color, k_job, k_partner} = k_muppet
 
 // Strings
 
